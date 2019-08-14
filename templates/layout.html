@@ -1,0 +1,98 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Kurumsaly</title>
+
+    <!-- Styles -->
+    <link href="{% static 'assets/css/page.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% static 'assets/img/apple-touch-icon.png' %}">
+    <link rel="icon" href="{% static 'assets/img/favicon.png' %}">
+  </head>
+
+  <body data-spy="scroll" data-target=".nav-navbar" data-offset="100">
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="smart">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="#">
+            <img class="logo-dark" src="{% static '/assets/img/logo-dark.png' %}" alt="logo">
+            <img class="logo-light" src="{% static '/assets/img/logo-light.png' %}" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <nav class="nav nav-navbar ml-auto">
+            <a class="nav-link active" href="#home">Anasayfa</a>
+            <a class="nav-link" href="#features">Hizmetlerimiz</a>
+            <a class="nav-link" href="#experts">Uzmanlarımız</a>
+            <a class="nav-link" href="#contact">İletişim</a>
+          </nav>
+        </section>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="../index.html"><img src="{% static '/assets/img/logo-dark.png' %}" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a>
+              <a class="social-twitter" href="https://twitter.com/thethemeio"><i class="fa fa-twitter"></i></a>
+              <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
+              <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="">Anasayfa</a>
+              <a class="nav-link" href="/about/">Hakkımızda</a>
+              <a class="nav-link" href="../blog/grid.html">Blog</a>
+              <a class="nav-link" href="../page/contact-1.html">İletişim</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+    <!-- Scroll top -->
+    <button class="btn btn-circle btn-primary scroll-top"><i class="fa fa-angle-up"></i></button>
+
+
+    <!-- Scripts -->
+    <script src="{% static '/assets/js/page.min.js' %}"></script>
+    <script src="{% static '/assets/js/script.js' %}"></script>
+
+  </body>
+</html>
