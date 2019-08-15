@@ -1,6 +1,5 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,7 +36,7 @@
 
         <section class="navbar-mobile">
           <nav class="nav nav-navbar ml-auto">
-            <a class="nav-link active" href="#home">Anasayfa</a>
+            <a class="nav-link active" href="{% url 'article:index' %}">Anasayfa</a>
             <a class="nav-link" href="#features">Hizmetlerimiz</a>
             <a class="nav-link" href="#experts">Uzmanlarımız</a>
             <a class="nav-link" href="#contact">İletişim</a>
@@ -74,9 +73,9 @@
 
           <div class="col-lg-6">
             <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
-              <a class="nav-link" href="">Anasayfa</a>
-              <a class="nav-link" href="/about/">Hakkımızda</a>
-              <a class="nav-link" href="../blog/grid.html">Blog</a>
+              <a class="nav-link" href="{% url 'article:index' %}">Anasayfa</a>
+              <a class="nav-link" href="{% url 'article:about' %}">Hakkımızda</a>
+              <a class="nav-link" href="{% url 'article:articles' %}">Blog</a>
               <a class="nav-link" href="../page/contact-1.html">İletişim</a>
             </div>
           </div>

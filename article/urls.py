@@ -7,5 +7,8 @@ app_name = "article"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name=index),
+    path('', views.index, name="index"),
+    path('about/', views.about, name="about"),
+    path('articles/', views.articles, name = "articles"),
+    path('article/<slug:article_slug>', views.article_detail, name="articleDetail")
 ]
